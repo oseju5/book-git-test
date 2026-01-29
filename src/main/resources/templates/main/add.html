@@ -5,15 +5,27 @@
 
 <!-- 부트스트랩 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<title>mainpage</title>
+<title>add</title>
 </head>
 <body>
 
 	<main class="bg-body-secondary vh-100 p-5">
 		<div class="container">
-			<h2>메인 페이지</h2>
-			<h3>도서 목록 조회 업데이트 예정</h3>
-			<a href="/add"><button type="button" class="btn btn-primary mt-3">도서 등록</button></a>
+	
+		<h2>신규 도서 등록</h2>
+		<form class="mt-5" action="add" method="post">
+			<label for="title" class="form-label mb-2">책 제목</label>
+			<input type="text" class="form-control mb-3" id="title" name="title">
+			
+			<label for="author" class="form-label mb-2">저자</label>
+			<input type="text" class="form-control mb-3" id="author" name="author">
+			
+			<label for="price" class="form-label mb-2">가격</label>
+			<input type="number" class="form-control mb-3" id="price" name="price">
+			
+			<button type="submit" class="btn btn-primary mt-3">도서 등록</button>
+		</form>
+			
 		</div>
 	</main>
 
